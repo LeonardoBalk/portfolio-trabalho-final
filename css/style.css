@@ -6,7 +6,7 @@
 html, body { height: 100%; }
 
 body {
-  /* tipografia e cores base */
+  /* tipografia e cores */
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #0f172a;
@@ -25,7 +25,7 @@ body {
   padding: 0 16px;
 }
 
-/* cabecalho e rodape com box model visivel */
+/* cabecalho e rodape */
 header,
 footer {
   background: #ffffff;
@@ -33,7 +33,7 @@ footer {
   padding: 16px;             /* padding para visualizar box model */
 }
 
-/* barra de navegacao com flexbox: logo a esquerda, menu a direita */
+/* barra de navegacao com flexbox */
 .nav {
   display: flex;
   align-items: center;
@@ -102,7 +102,7 @@ h1 { font-size: 28px; margin: 0 0 8px 0; }
 h2 { font-size: 22px; margin: 0 0 6px 0; }
 p  { margin: 0; }
 
-/* secao sobre com imagem e texto alinhados */
+/* secao sobre com imagem e textos */
 .sobre {
   display: flex;
   align-items: center;
@@ -110,7 +110,7 @@ p  { margin: 0; }
   flex-wrap: wrap;
 }
 
-/* imagem de perfil com margin e padding para destacar box model */
+/* imagem de perfil com margin e padding */
 .foto {
   display: block;
   width: 120px;
@@ -126,7 +126,7 @@ p  { margin: 0; }
 /* id especifico para demonstrar seletores */
 #foto-perfil { box-shadow: 0 2px 10px rgba(0,0,0,.04); }
 
-/* lista com espacamento (margin e padding) para legibilidade */
+/* lista com espacamento */
 .lista {
   padding-left: 18px;   /* padding da lista */
   margin-top: 8px;      /* margin da lista */
@@ -134,7 +134,6 @@ p  { margin: 0; }
 
 .lista li { margin: 4px 0; }
 
-/* links genericos no conteudo */
 a { color: #4f46e5; }
 a:hover { color: #4338ca; }
 
@@ -210,5 +209,4 @@ a:hover { color: #4338ca; }
   border-color: #4338ca;
 }
 
-/* rodape texto leve */
 footer small { color: #6b7280; }
