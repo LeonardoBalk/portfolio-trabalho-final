@@ -1,61 +1,193 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <!-- metadados basicos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Leonardo Balk - Portfólio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- cabecalho com logo a esquerda e menu a direita -->
-    <header class="topo">
-        <div class="container nav">
-            <a class="brand" href="index.html">
-                <span class="brand-nome">Leonardo Balk</span>
-            </a>
-            <nav aria-label="principal">
-                <ul class="menu">
-                    <li><a href="index.html" aria-current="page">Início</a></li>
-                    <li><a href="paginas/projetos.html">Projetos</a></li>
-                    <li><a href="paginas/contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!DOCTYPE html>
+    <html lang="pt-br">
 
-    <!-- conteudo principal -->
-    <main>
-        <div class="container">
-            <section class="bloco">
-                <h1>Sobre Mim</h1>
-                <div class="sobre">
-                    <img id="foto-perfil" class="foto" src="imagens/perfil.svg" alt="foto de perfil de leonardo balk">
-                    <p>Olá, eu sou o Leonardo.</p>
-                </div>
-            </section>
+    <head>
 
-            <section class="bloco">
-                <h2>Habilidades</h2>
-                <ul class="lista">
-                    <li>HTML Semântico</li>
-                    <li>CSS (Box Model, Flexbox)</li>
-                    <li>Git e GitHub</li>
-                </ul>
-            </section>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Leonardo Balk - Portfólio</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-            <section class="bloco">
-                <h2>Links</h2>
-                <p>Veja também meu trabalho no <a href="https://github.com/LeonardoBalk" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
-            </section>
-        </div>
-    </main>
+    <body>
+        <!-- cabecalho -->
+        <header class="topo">
+            <div class="container nav">
+                <a class="brand" href="index.html">
+                    <span class="brand-nome">Leonardo Balk</span>
+                </a>
+                <nav aria-label="principal">
+                    <ul class="menu">
+                        <li><a href="index.html" aria-current="page">Início</a></li>
+                        <li><a href="paginas/projetos.html">Projetos</a></li>
+                        <li><a href="paginas/contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <button id="toggle-theme" class="btn"
+                    style="margin-left: 20px; padding: 6px 12px; font-size: 14px;">Tema</button>
+            </div>
+        </header>
 
-    <!-- rodape -->
-    <footer>
-        <div class="container">
-            <small>&copy; 2025 Leonardo Balk</small>
-        </div>
-    </footer>
-</body>
-</html>
+        <!-- conteudo -->
+        <main>
+            <div class="container">
+                <!-- hero -->
+                <section class="hero">
+                    <h1>Leonardo Garcia Balk</h1>
+                    <p>Desenvolvedor Full Stack | Estudante de SI</p>
+                    <p style="font-size: 16px; margin-top: -10px;">Santa Maria – RS</p>
+
+                    <div class="hero-links">
+                        <a href="https://linkedin.com/in/leonardobalk" target="_blank">LinkedIn</a>
+                        <a href="mailto:leonardo.balk01@gmail.com">Email</a>
+                        <a href="https://wa.me/5555996432639" target="_blank">WhatsApp</a>
+                        <a href="https://github.com/LeonardoBalk" target="_blank">GitHub</a>
+                    </div>
+                </section>
+
+                <!-- sobre -->
+                <section class="bloco">
+                    <h2>Sobre Mim</h2>
+                    <div class="sobre">
+                        <img id="foto-perfil" class="foto" src="imagens/perfil.jpg"
+                            alt="foto de perfil de leonardo balk">
+                        <div>
+                            <p>Estudante de Sistemas de Informação na UFSM com experiência prática
+                                em desenvolvimento Full Stack, suporte técnico e infraestrutura.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- habilidades -->
+                <section class="bloco">
+                    <h2>Habilidades Técnicas</h2>
+                    <div style="text-align: center; margin: 20px 0;">
+                        <img src="https://skillicons.dev/icons?i=c,java,python,go,js,ts,html,css,docker,react,bootstrap,spring,nodejs,express,mysql,supabase&perline=8"
+                            alt="Tech Skills" style="max-width: 100%;">
+                    </div>
+
+                    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                        <div style="flex: 1; min-width: 200px;">
+                            <h2>Soft Skills</h2>
+                            <ul class="lista">
+                                <li>Comunicação</li>
+                                <li>Trabalho em equipe</li>
+                                <li>Resolução de problemas</li>
+                            </ul>
+                        </div>
+                        <div style="flex: 1; min-width: 200px;">
+                            <h2>Idiomas</h2>
+                            <ul class="lista">
+                                <li>Português</li>
+                                <li>Inglês (Intermediário)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- experiencia -->
+                <section class="bloco">
+                    <h2>Experiência Profissional</h2>
+
+                    <details open>
+                        <summary>LAMIC – UFSM (Set 2025 – Atual)</summary>
+                        <div>
+                            <p><strong>Estagiário de Desenvolvimento Full Stack / TI</strong></p>
+                            <blockquote>
+                                <p>Desenvolvimento e manutenção de aplicações web internas, administração de servidores
+                                    Windows Server, uso de Docker e integrações via APIs REST.</p>
+                            </blockquote>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Neurocom (Ago 2025 – Atual)</summary>
+                        <div>
+                            <p><strong>Desenvolvedor Full Stack</strong></p>
+                            <blockquote>
+                                <p>Criação de assistente conversacional com RAG (Node.js, Supabase, Google Gemini),
+                                    autenticação JWT/Google e WebSocket.</p>
+                            </blockquote>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Macsul (Mai 2025 – Set 2025)</summary>
+                        <div>
+                            <p><strong>Suporte Técnico</strong></p>
+                            <blockquote>
+                                <p>Atendimento técnico, manutenção de sistemas de automação comercial e suporte em
+                                    infraestrutura e redes.</p>
+                            </blockquote>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>CCSH – UFSM (Jul 2024 – Mar 2025)</summary>
+                        <div>
+                            <p><strong>Bolsista de TI</strong></p>
+                            <blockquote>
+                                <p>Suporte a usuários, manutenção de hardware/software e diagnóstico de problemas
+                                    técnicos.
+                                </p>
+                            </blockquote>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>Supertex (Mar 2023 – Ago 2023)</summary>
+                        <div>
+                            <p><strong>Arquivista</strong></p>
+                            <blockquote>
+                                <p>Organização e digitalização de arquivos, criação de versões eletrônicas e apoio
+                                    administrativo.</p>
+                            </blockquote>
+                        </div>
+                    </details>
+                </section>
+
+                <!-- formacao -->
+                <section class="bloco">
+                    <h2>Formação Acadêmica</h2>
+                    <ul class="lista">
+                        <li style="margin-bottom: 10px;">
+                            <strong>Bacharelado em Sistemas de Informação</strong><br>
+                            Universidade Federal de Santa Maria (Ago 2023 – Ago 2027)<br>
+                            <span style="font-size: 0.9em; color: #6b7280;">Status: Cursando</span>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <strong>Bacharelado em Administração</strong><br>
+                            Universidade Federal de Santa Maria (Mar 2023 – Ago 2023)<br>
+                            <span style="font-size: 0.9em; color: #6b7280;">Status: Trancado</span>
+                        </li>
+                        <li>
+                            <strong>Técnico em Administração</strong><br>
+                            Instituto Federal Farroupilha (Fev 2020 – Dez 2022)<br>
+                            <span style="font-size: 0.9em; color: #6b7280;">Status: Concluído</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <!-- rodape -->
+        <footer>
+            <div class="container">
+                <small>&copy; 2025 Leonardo Balk</small>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+
+    </html>

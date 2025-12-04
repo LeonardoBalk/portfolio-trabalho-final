@@ -1,63 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <!-- metadados basicos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Projetos - Leonardo Balk</title>
     <link rel="stylesheet" href="./../css/style.css">
 </head>
+
 <body>
-    <!-- cabecalho com logo a esquerda e menu a direita -->
-    <header class="topo">
-        <div class="container nav">
-            <a class="brand" href="./../index.html">
-                <span class="brand-nome">Leonardo Balk</span>
-            </a>
-            <nav aria-label="principal">
-                <ul class="menu">
-                    <li><a href="./../index.html">Início</a></li>
-                    <li><a href="projetos.html" aria-current="page">Projetos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <!-- conteudo principal -->
-    <main>
-        <div class="container">
-            <section class="bloco">
-                <h1>Meus Projetos</h1>
-                <hr>
-                <table class="tabela">
-                    <thead>
-                        <tr>
-                            <th>Projeto</th>
-                            <th>Tecnologias</th>
-                            <th>Ano</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Meu Portfólio</td>
-                            <td>HTML, CSS</td>
-                            <td>2025</td>
-                        </tr>
-                        <tr>
-                            <td>Calculadora Online</td>
-                            <td>HTML, CSS, JavaScript</td>
-                            <td>2025</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="3">Mais projetos serão adicionados em breve.</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </section>
-        </div>
-    </main>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meus Projetos - Leonardo Balk</title>
+        <link rel="stylesheet" href="./../css/style.css">
+    </head>
+
+    <body>
+        <!-- cabecalho -->
+        <header class="topo">
+            <div class="container nav">
+                <a class="brand" href="./../index.html">
+                    <span class="brand-nome">Leonardo Balk</span>
+                </a>
+                <nav aria-label="principal">
+                    <ul class="menu">
+                        <li><a href="./../index.html">Início</a></li>
+                        <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <button id="toggle-theme" class="btn"
+                    style="margin-left: 20px; padding: 6px 12px; font-size: 14px;">Tema</button>
+            </div>
+        </header>
+
+        <!-- conteudo -->
+        <main>
+            <div class="container">
+                <section class="bloco">
+                    <h1>Meus Projetos</h1>
+                    <hr>
+
+                    <!-- destaque -->
+                    <div class="featured-project" style="margin: 24px 0;">
+                        <img src="https://github.com/user-attachments/assets/7b8b4c29-f93f-4696-9bfc-0a8c76e81911"
+                            alt="Assistente Neurocom" class="featured-img">
+                        <div class="featured-content">
+                            <h2>Projeto Destaque: Assistente Neurocom</h2>
+                            <p>Backend dialogado com RAG (Retrieval-Augmented Generation) para assistente inteligente.
+                            </p>
+                            <ul class="lista" style="margin-top: 10px;">
+                                <li>Autenticação JWT/Google</li>
+                                <li>Supabase (Postgres + pgvector)</li>
+                                <li>Node.js + Express</li>
+                            </ul>
+                            <div class="tech-stack">
+                                <strong>Techs:</strong> Node.js, Express, Supabase, Gemini AI
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Lista de Projetos</h2>
+                    <table class="tabela">
+                        <thead>
+                            <tr>
+                                <th>Projeto</th>
+                                <th>Descrição</th>
+                                <th>Tecnologias</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://github.com/LeonardoBalk/assistente-neurocom" target="_blank"
+                                        style="color: #4f46e5; text-decoration: none;">Assistente Neurocom</a></td>
+                                <td>Backend com RAG</td>
+                                <td>Node.js, Supabase</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/LeonardoBalk/kanban-tarefas" target="_blank"
+                                        style="color: #4f46e5; text-decoration: none;">Kanban Tarefas</a></td>
+                                <td>Gerenciamento de Tarefas</td>
+                                <td>Go (Golang)</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://github.com/LeonardoBalk/projeto4---keepDance" target="_blank"
+                                        style="color: #4f46e5; text-decoration: none;">Compartilhamento de Músicas</a>
+                                </td>
+                                <td>Web App</td>
+                                <td>JavaScript</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </main>
+        <script src="../js/script.js"></script>
+    </body>
+
+    </html>

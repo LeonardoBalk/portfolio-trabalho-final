@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <!-- metadados basicos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Leonardo Balk</title>
     <link rel="stylesheet" href="./../css/style.css">
 </head>
+
 <body>
-    <!-- cabecalho com logo a esquerda e menu a direita -->
     <header class="topo">
         <div class="container nav">
             <a class="brand" href="./../index.html">
@@ -21,40 +21,68 @@
                     <li><a href="contato.html" aria-current="page">Contato</a></li>
                 </ul>
             </nav>
+            <button id="toggle-theme" class="btn"
+                style="margin-left: 20px; padding: 6px 12px; font-size: 14px;">Tema</button>
         </div>
     </header>
 
-    <!-- conteudo principal -->
+    <!-- conteudo -->
     <main>
         <div class="container">
             <section class="bloco">
                 <h1>Contato</h1>
                 <hr>
-                <form action="#" method="post" class="form">
-                    <div class="campo">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" placeholder="Seu Nome">
-                    </div>
 
-                    <div class="campo">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="Seu E-mail">
-                    </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 20px;">
+                    <form action="#" method="post" class="form" style="flex: 1; min-width: 300px;">
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+                        </div>
 
-                    <div class="campo">
-                        <label for="assunto">Assunto</label>
-                        <input type="text" id="assunto" name="assunto" placeholder="Assunto da Mensagem">
-                    </div>
+                        <div class="campo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                        </div>
 
-                    <div class="campo">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Sua Mensagem"></textarea>
-                    </div>
+                        <div class="campo">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" name="assunto" placeholder="Assunto da Mensagem" required>
+                        </div>
 
-                    <button type="submit" class="btn">Enviar</button>
-                </form>
+                        <div class="campo">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="6" placeholder="Sua Mensagem"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Enviar</button>
+                    </form>
+
+                    <div class="contato-info" style="flex: 1; min-width: 250px;">
+                        <h2>Outros Canais</h2>
+                        <ul class="lista" style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 12px;">
+                                <strong>E-mail:</strong><br>
+                                <a href="mailto:leonardo.balk01@gmail.com">leonardo.balk01@gmail.com</a>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>WhatsApp:</strong><br>
+                                <a href="https://wa.me/5555996432639" target="_blank">(+55) 55 99643-2639</a>
+                            </li>
+                            <li style="margin-bottom: 12px;">
+                                <strong>LinkedIn:</strong><br>
+                                <a href="https://linkedin.com/in/leonardobalk"
+                                    target="_blank">linkedin.com/in/leonardobalk</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
+
+    <script src="../js/script.js"></script>
 </body>
+
 </html>
